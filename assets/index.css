@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'babas';
+    src: url(Fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'babas';
+}
+
+body,
+html {
+    background: rgb(11, 7, 39);
+    background: linear-gradient(160deg, rgba(11, 7, 39, 1) 0%, rgba(0, 3, 57, 1) 100%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    min-height: 100vh;
+}
+
+main {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 60px;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 4rem !important;
+    text-align: center;
+    margin-top: 10px;
+}
+
+main h4 {
+    font-size: 2.5rem;
+    background-color: #ea580c;
+    text-align: center;
+    margin-top: 10px !important;
+    margin-bottom: 10px;
+    padding-top: 4px;
+    padding-top: 4px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+#highlighth3 span {
+    background-color: #ea580c;
+    margin-bottom: 10px !important;
+    margin-top: 10px !important;
+    padding-top: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1.9rem;
+    /* padding-bottom: 4px; */
+}
+
+@media screen and (min-width: 0px) and (max-width:390px) {
+    #highlighth3 span {
+        margin-top: 50px !important;
+    }
+
+    #js {
+        margin-top: 30px;
+    }
+}
+
+#highlighth3 {
+    margin-top: 15px;
+}
+
+.box {
+    width: 130px !important;
+    height: 50px;
+    color: white;
+    text-shadow: 0 1px 0 #000;
+    --border-angle: 0turn;
+    --main-bg: conic-gradient(from var(--border-angle), #213, #112 5%, #112 60%, #213 95%);
+    border: solid 5px transparent;
+    /* border-radius: 2em; */
+    --gradient-border: conic-gradient(from var(--border-angle), transparent 25%, #08f, #f03 99%, transparent);
+    background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
+    background-position: center center;
+    animation: bg-spin 3s linear infinite;
+}
+
+@keyframes bg-spin {
+    to {
+        --border-angle: 1turn;
+    }
+}
+
+.box:hover {
+    animation-play-state: paused;
+}
+
+@property --border-angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0turn;
+}
+
+.mainbuttonDiv {
+    margin-top: 30px !important;
+}
+
+.btn-1 {
+    margin: 10px;
+}
+
+
+.main-2 {
+    background-image: url(images/bg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 50vh;
+    border-radius: 30px;
+    margin-top: 70px;
+}
+.about-section{
+    color: white !important;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100%;
+    margin-top: 50px !important;
+    padding-left: 20px !important;
+    padding-right: 50px !important;
+}
+.about-section h2{
+    color: #CBACF9;
+    font-size: 4rem !important;
+}
+.about-section p{
+    font-size: 22px;
+    font-weight: normal;
+}
