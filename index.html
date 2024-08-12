@@ -12,36 +12,69 @@
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
 
 
+   <nav>
+  <div class="nav-content">
+    <div class="toggle-btn">
+      <i class='bx bx-plus'></i>
+    </div>
+    <span style="--i:1;">
+      <a href="#main" title="Home"><i class='bx bxs-home'></i></a>
+    </span>
+    <span style="--i:2;">
+      <a href="#me" title="About Me"><i class="fa-solid fa-user"></i></a>
+    </span>
+    <span style="--i:3;">
+      <a href="#Services-container" title="Our Services"><i class="fas fa-code"></i></a>
+    </span>
+    <span style="--i:4;">
+      <a href="#skills" title="Our Skills"><i class="fas fa-tools"></i></a>
+    </span>
+    <span style="--i:5;">
+      <a href="#project-container" title="My Projects"><i class="fas fa-tasks"></i></a>
+    </span>
+    <span style="--i:5;">
+      <a href="#chat" id="Contact"><i class="fas fa-envelope"></i></a>
+    </span>
+  </div>
+</nav>
 
 
 
-
-
-    <main class="container main">
-        <h1>< Hi I'm Muhammad Ahmed /></h1>
+    <main class="container main" id="main">
+        <h1>
+            < Hi I'm Muhammad Ahmed />
+        </h1>
         <h4>A Front End Developer</h4>
         <h3>Based In Karachi Pakistan</h3>
         <h3 id="highlighth3">Specialized In <span>HTML</span> <span>CSS</span> <span id="js">JAVASCRIPT</span></h3>
         <div class="mainbuttonDiv">
-            <button class="box btn-1"><a class="going" href="#chat">Say Hi &nbsp;&nbsp;&nbsp; <i class="fa-solid fa-paper-plane"></i></a></button>
-            <button class="box btn-2" style="font-family: 'pop';">Resume &nbsp;&nbsp;&nbsp;<i class="fa-solid fa-download"></i></button>
+            <button class="box btn-1"><a class="going" href="#chat">Say Hi &nbsp;&nbsp;&nbsp; <i
+                        class="fa-solid fa-paper-plane"></i></a></button>
+            <button class="box btn-2" style="font-family: 'pop';">Resume &nbsp;&nbsp;&nbsp;<i
+                    class="fa-solid fa-download"></i></button>
         </div>
     </main>
 
 
 
-    <div class="main-2 container">
+    <div class="main-2 container" id="me">
         <div class="row">
             <div class="col-sm-12 col-lg-7 col-md-12 about-section">
                 <h2>ABOUT ME</h2>
-                <p>Hello! I'm Muhammad Ahmed, a passionate front-end developer from Karachi, Pakistan. Since starting my web development journey in December 2023, I've mastered HTML, CSS, JavaScript, Bootstrap, Tailwind, and Firebase. Currently, I'm diving into ReactJS to create dynamic web applications.
-<br>
-                    My goal is to become a full-stack developer, with plans to explore Node.js, Express.js, and more as part of my course at the Saylani Mass IT Training Program. I'm driven by a love for technology and a commitment to crafting impactful web experiences.
+                <p>Hello! I'm Muhammad Ahmed, a passionate front-end developer from Karachi, Pakistan. Since starting my
+                    web development journey in December 2023, I've mastered HTML, CSS, JavaScript, Bootstrap, Tailwind,
+                    and Firebase. Currently, I'm diving into ReactJS to create dynamic web applications.
+                    <br>
+                    My goal is to become a full-stack developer, with plans to explore Node.js, Express.js, and more as
+                    part of my course at the Saylani Mass IT Training Program. I'm driven by a love for technology and a
+                    commitment to crafting impactful web experiences.
                 </p>
             </div>
             <div class="col-sm-12 col-lg-5 col-md-12 image-section">
@@ -57,7 +90,7 @@
 
 
 
-    <section class="our-services container">
+    <section class="our-services container" id="Services-container">
         <h1>Our Services</h1>
         <div class="row">
             <div class="col-sm-12 col-lg-6 col-md-12">
@@ -1881,21 +1914,29 @@
 
 
 
-    <div class="skills container">
+    <div class="skills container" id="skills">
         <h1>Skills</h1>
         <div class="skills-slider row">
-           <div class="image-bg-div col-sm-2 col-lg-2 col-md-2"> <img src="assets/images/html.png" alt="" class="skills-image"></div>
-           <div class="image-bg-div col-sm-2 col-lg-2 col-md-2"> <img src="assets/images/css.png" alt="" class="skills-image"></div>
-           <div class="image-bg-div col-sm-2 col-lg-2 col-md-2"> <img src="assets/images/bootsrap.png" alt="" class="skills-image"></div>
-           <div class="image-bg-div col-sm-2 col-lg-2 col-md-2"> <img src="assets/images/tailwind.png" alt="" class="skills-image"></div>
-           <div class="image-bg-div col-sm-2 col-lg-2 col-md-2"> <img src="assets/images/js.png" alt="" class="skills-image"></div>
-           <div class="image-bg-div col-sm-2 col-lg-2 col-md-2"> <img src="assets/images/firebase.png" alt="" class="skills-image"></div>
+            <div class="image-bg-div col-sm-2 col-lg-2 col-md-2"> <img src="assets/images/html.png" alt=""
+                    class="skills-image"></div>
+            <div class="image-bg-div col-sm-2 col-lg-2 col-md-2"> <img src="assets/images/css.png" alt=""
+                    class="skills-image"></div>
+            <div class="image-bg-div col-sm-2 col-lg-2 col-md-2"> <img src="assets/images/bootsrap.png" alt=""
+                    class="skills-image"></div>
+            <div class="image-bg-div col-sm-2 col-lg-2 col-md-2"> <img src="assets/images/tailwind.png" alt=""
+                    class="skills-image"></div>
+            <div class="image-bg-div col-sm-2 col-lg-2 col-md-2"> <img src="assets/images/js.png" alt=""
+                    class="skills-image"></div>
+            <div class="image-bg-div col-sm-2 col-lg-2 col-md-2"> <img src="assets/images/firebase.png" alt=""
+                    class="skills-image"></div>
         </div>
+
+
     </div>
 
 
 
-    <div class="project-section container">
+    <div class="project-section container" id="project-container">
         <h1>Projects</h1>
 
 
@@ -1905,8 +1946,11 @@
             </div>
             <div class="col-sm-12 col-lg-8 col-md-12 text-div">
                 <h2>Web Glowing - Empowering Developers with Free Online Tools</h2>
-                <p>Web Glowing simplifies development with free, powerful online tools. From custom CSS generation to text-to-speech conversion, our user-friendly tools boost productivity and creativity, helping developers build great websites efficiently. Whether refining designs or exploring new ideas, Web Glowing is your go-to resource.</p>
-                
+                <p>Web Glowing simplifies development with free, powerful online tools. From custom CSS generation to
+                    text-to-speech conversion, our user-friendly tools boost productivity and creativity, helping
+                    developers build great websites efficiently. Whether refining designs or exploring new ideas, Web
+                    Glowing is your go-to resource.</p>
+
 
                 <div class="live-btn-div">
                     <a href="https://webglowing.com/" target="_blank">
@@ -1921,7 +1965,7 @@
                             <span class="rightArrow arrow"></span>
                             <span class="leftArrow arrow"></span>
                         </button>
-                                                
+
                     </a>
                 </div>
 
@@ -1945,7 +1989,8 @@
             </div>
             <div class="col-sm-12 col-lg-8 col-md-12 text-div">
                 <h2>Learning in Action</h2>
-                <p>Developed a fully responsive website during my HTML, CSS, and JavaScript learning journey, showcasing my ability to deliver a real client project while mastering core web technologies.</p>
+                <p>Developed a fully responsive website during my HTML, CSS, and JavaScript learning journey, showcasing
+                    my ability to deliver a real client project while mastering core web technologies.</p>
                 <div class="live-btn-div">
                     <a href="https://github.com/MuhammadAhmadAslam">
                         <button class="custom-button">
@@ -1959,7 +2004,7 @@
                             <span class="rightArrow arrow"></span>
                             <span class="leftArrow arrow"></span>
                         </button>
-                                                
+
                     </a>
                 </div>
             </div>
@@ -1973,7 +2018,8 @@
             </div>
             <div class="col-sm-12 col-lg-8 col-md-12 text-div">
                 <h2>Learning in Action</h2>
-                <p>Developed a fully responsive website during my HTML, CSS, and JavaScript learning journey, showcasing my ability to deliver a real client project while mastering core web technologies.</p>
+                <p>Developed a fully responsive website during my HTML, CSS, and JavaScript learning journey, showcasing
+                    my ability to deliver a real client project while mastering core web technologies.</p>
                 <div class="live-btn-div">
                     <a href="https://github.com/MuhammadAhmadAslam">
                         <button class="custom-button">
@@ -1987,7 +2033,7 @@
                             <span class="rightArrow arrow"></span>
                             <span class="leftArrow arrow"></span>
                         </button>
-                                                
+
                     </a>
                 </div>
             </div>
@@ -2001,7 +2047,8 @@
             </div>
             <div class="col-sm-12 col-lg-8 col-md-12 text-div">
                 <h2>Learning in Action</h2>
-                <p>Developed a fully responsive website during my HTML, CSS, and JavaScript learning journey, showcasing my ability to deliver a real client project while mastering core web technologies.</p>
+                <p>Developed a fully responsive website during my HTML, CSS, and JavaScript learning journey, showcasing
+                    my ability to deliver a real client project while mastering core web technologies.</p>
                 <div class="live-btn-div">
                     <a href="https://github.com/MuhammadAhmadAslam">
                         <button class="custom-button">
@@ -2015,7 +2062,7 @@
                             <span class="rightArrow arrow"></span>
                             <span class="leftArrow arrow"></span>
                         </button>
-                                                
+
                     </a>
                 </div>
             </div>
@@ -2029,7 +2076,8 @@
             </div>
             <div class="col-sm-12 col-lg-8 col-md-12 text-div">
                 <h2>Learning in Action</h2>
-                <p>Developed a fully responsive website during my HTML, CSS, and JavaScript learning journey, showcasing my ability to deliver a real client project while mastering core web technologies.</p>
+                <p>Developed a fully responsive website during my HTML, CSS, and JavaScript learning journey, showcasing
+                    my ability to deliver a real client project while mastering core web technologies.</p>
                 <div class="live-btn-div">
                     <a href="https://github.com/MuhammadAhmadAslam">
                         <button class="custom-button">
@@ -2043,7 +2091,7 @@
                             <span class="rightArrow arrow"></span>
                             <span class="leftArrow arrow"></span>
                         </button>
-                                                
+
                     </a>
                 </div>
             </div>
@@ -2057,7 +2105,8 @@
             </div>
             <div class="col-sm-12 col-lg-8 col-md-12 text-div">
                 <h2>Learning in Action</h2>
-                <p>Developed a fully responsive website during my HTML, CSS, and JavaScript learning journey, showcasing my ability to deliver a real client project while mastering core web technologies.</p>
+                <p>Developed a fully responsive website during my HTML, CSS, and JavaScript learning journey, showcasing
+                    my ability to deliver a real client project while mastering core web technologies.</p>
                 <div class="live-btn-div">
                     <a href="https://github.com/MuhammadAhmadAslam">
                         <button class="custom-button">
@@ -2071,7 +2120,7 @@
                             <span class="rightArrow arrow"></span>
                             <span class="leftArrow arrow"></span>
                         </button>
-                                                
+
                     </a>
                 </div>
             </div>
@@ -2084,7 +2133,8 @@
             </div>
             <div class="col-sm-12 col-lg-8 col-md-12 text-div">
                 <h2>Learning in Action</h2>
-                <p>Developed a fully responsive website during my HTML, CSS, and JavaScript learning journey, showcasing my ability to deliver a real client project while mastering core web technologies.</p>
+                <p>Developed a fully responsive website during my HTML, CSS, and JavaScript learning journey, showcasing
+                    my ability to deliver a real client project while mastering core web technologies.</p>
                 <div class="live-btn-div">
                     <a href="https://github.com/MuhammadAhmadAslam">
                         <button class="custom-button">
@@ -2098,7 +2148,7 @@
                             <span class="rightArrow arrow"></span>
                             <span class="leftArrow arrow"></span>
                         </button>
-                                                
+
                     </a>
                 </div>
             </div>
@@ -2111,7 +2161,7 @@
 
 
 
-    
+
 
 
 
@@ -2132,13 +2182,14 @@
                 <div class="row">
                     <div class="col-sm-12 col-lg-8 col-md-12">
                         <p>Email <br>
-                        <a href="mailto:muhammadahmedaslamofficial@gmail.com" id="anchor">muhammadahmedaslamofficial@gmail.com</a>
-                    </p>
+                            <a href="mailto:muhammadahmedaslamofficial@gmail.com"
+                                id="anchor">muhammadahmedaslamofficial@gmail.com</a>
+                        </p>
                     </div>
                     <div class="col-sm-12 col-lg-4 col-md-12">
                         <p>Contact <br>
-                        <a href="telto:03362905320">03362905320</a>
-                    </p>
+                            <a href="telto:03362905320">03362905320</a>
+                        </p>
                     </div>
                 </div>
 
@@ -2147,13 +2198,18 @@
                     <div class="col-sm-12 col-lg-6 col-md-12">
                         <p>Address
                             <br>
-                        Karachi Pakistan</p>
+                            Karachi Pakistan
+                        </p>
                     </div>
                     <div class="col-sm-12 col-lg-6 col-md-12">
-                        <a href="https://www.facebook.com/ahmedaslamofficial" target="_blank"><i class="fa-brands fa-facebook" id="social-icons"></i></a>
-                        <a href="https://www.instagram.com/ahmed_here_990/" target="_blank"><i class="fa-brands fa-github" id="social-icons"></i></a>
-                        <a href="https://github.com/MuhammadAhmadAslam" target="_blank"><i class="fa-brands fa-instagram" id="social-icons"></i></a>
-                        <a href="https://www.linkedin.com/in/muhammad-ahmed-b7b8452b6/" target="_blank"><i id="social-icons" class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/ahmedaslamofficial" target="_blank"><i
+                                class="fa-brands fa-facebook" id="social-icons"></i></a>
+                        <a href="https://www.instagram.com/ahmed_here_990/" target="_blank"><i
+                                class="fa-brands fa-github" id="social-icons"></i></a>
+                        <a href="https://github.com/MuhammadAhmadAslam" target="_blank"><i
+                                class="fa-brands fa-instagram" id="social-icons"></i></a>
+                        <a href="https://www.linkedin.com/in/muhammad-ahmed-b7b8452b6/" target="_blank"><i
+                                id="social-icons" class="fa-brands fa-linkedin"></i></a>
                     </div>
                 </div>
 
@@ -2168,43 +2224,51 @@
                 <label for="nameInput">
                     Name
                     <br>
-                    <input type="text"  id="nameInput" placeholder="Muhammad Ahmed">
+                    <input type="text" id="nameInput" placeholder="Muhammad Ahmed">
                 </label>
                 <br>
-                <label for="EmailInput" >
+                <label for="EmailInput">
                     Email
                     <br>
-                    <input type="text"  placeholder="muhammadahmedaslamofficial@gmail.com" id="EmailInput">
+                    <input type="text" placeholder="muhammadahmedaslamofficial@gmail.com" id="EmailInput">
                 </label>
                 <br>
                 <label for="Subject">
                     Subject
                     <br>
-                    <input type="text"  id="Subject" placeholder="Want To Build A Website">
+                    <input type="text" id="Subject" placeholder="Want To Build A Website">
                 </label>
                 <br>
                 <label for="message">
                     Subject
                     <br>
-                    <textarea id="message" value="" placeholder="Looking for a proficient Front End Developer On A Specific Website"></textarea>
+                    <textarea id="message" value=""
+                        placeholder="Looking for a proficient Front End Developer On A Specific Website"></textarea>
                 </label>
-               <button id="submit-btn">Submit <i class="fa-solid fa-paper-plane"></i></button>
-               <hr>
+                <button id="submit-btn">Submit <i class="fa-solid fa-paper-plane"></i></button>
+                <hr>
             </div>
         </div>
     </div>
 
-    
-    
-<footer>
-    &copy; 2024 Muhammad Ahmed. All rights reserved.
-</footer>
 
 
+    <footer>
+        &copy; 2024 Muhammad Ahmed. All rights reserved.
+    </footer>
+
+
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
