@@ -2,14 +2,19 @@
     font-family: 'babas';
     src: url(Fonts/Bebas_Neue/BebasNeue-Regular.ttf);
 }
-
+@font-face {
+    font-family: 'pop';
+    src: url(Fonts/Poppins/Poppins-Medium.ttf);
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'babas';
 }
-
+p{
+    font-family: 'pop';
+}
 body,
 html {
     background: rgb(11, 7, 39);
@@ -17,7 +22,6 @@ html {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    /* min-height: 600vh; */
 }
 
 main {
@@ -122,9 +126,10 @@ main h4 {
     background: linear-gradient(90deg, rgba(4, 7, 29, 0.85) 0%, rgba(12, 14, 35, 0.80) 100%), url(images/bg.jpeg);
     background-position: left;
     background-repeat: no-repeat;
-    min-height: 50vh;
+    /* min-height: 50vh; */
     border-radius: 30px;
     margin-top: 70px;
+    padding-bottom: 70px;
 }
 .about-section{
     color: white !important;
@@ -144,7 +149,7 @@ main h4 {
     font-size: 4rem !important;
 }
 .about-section p{
-    font-size: 1.6rem;
+    font-size: 1rem;
     text-align: justify;
     align-content: center;
     font-weight: normal;
@@ -155,9 +160,15 @@ main h4 {
     align-items: center;
 }
 #meImage{
-    width: 70%;
-    user-select: none;
-    height: 70%;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+.our-services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .services-boxes {
     min-width: 85% !important;
@@ -175,7 +186,9 @@ main h4 {
     padding-top: 20px;
     padding-bottom: 20px;
 }
-
+@media screen and (min-width:0px) and (max-width: 500px) {
+ 
+}
 @keyframes bg-spin {
     to {
         --border-angle: 1turn;
@@ -232,7 +245,7 @@ main h4 {
         font-size: 30px;
 }
 .title-description p{
-    font-size: 20px;
+    font-size: 1rem;
 }
 
 .skills h1{
@@ -246,6 +259,7 @@ main h4 {
     overflow: hidden;
     width: 100%; 
     position: relative;
+    height: 100%;
 }
 .skills-slider{
     display: flex;
@@ -287,8 +301,10 @@ main h4 {
 }
 .text-div{
     color: #08f;
-    text-align: center;
-    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .project-boxes {
     color: white;
@@ -300,6 +316,7 @@ main h4 {
     background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
     animation: bg-spin 3s linear infinite;
     margin-bottom: 25px;
+    padding-bottom: 40px;
 }
 
 @keyframes bg-spin {
@@ -323,3 +340,234 @@ main h4 {
     align-items: center;
     flex-direction: column;
 }
+@media screen and (min-width:0px) and (max-width: 550px) {
+    .box-div{
+        width: 100%;
+    }
+    .skills-image{
+        width: 30% !important;
+        margin-top: 20px;
+    }
+    .icon-div{
+        margin-bottom: 30px;
+    }
+    .services-boxes{
+        min-width: 100% !important;
+        min-height: 250px;
+        width: 100% !important;
+        color: white;
+        text-shadow: 0 1px 0 #000;
+        --border-angle: 0turn;
+        --main-bg: conic-gradient(from var(--border-angle), #213, #112 5%, #112 60%, #213 95%);
+        border: solid 2px transparent;
+        --gradient-border: conic-gradient(from var(--border-angle), transparent 25%, #08f, #f03 99%, transparent);
+        background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
+        background-position: center center;
+        animation: bg-spin 3s linear infinite;
+        margin-bottom: 25px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        flex-direction: column;
+        }
+}
+.text-div h2{
+    color: #ea580c;
+}
+.text-div p{
+    color: white;
+    font-weight: normal;
+    font-size: 1rem;
+    text-align: center;
+}
+.img-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+.custom-button {
+    position: relative;
+    width: 11em;
+    height: 4em;
+    outline: none;
+    transition: 0.1s;
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: #ddebf0;
+  }
+  
+  .custom-button .clip {
+    --color: #2761c3;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border: 5px double var(--color);
+    box-shadow: inset 0px 0px 15px #195480;
+    -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  }
+  
+  .custom-button .arrow {
+    position: absolute;
+    transition: 0.2s;
+    background-color: #2761c3;
+    top: 35%;
+    width: 11%;
+    height: 30%;
+  }
+  
+  .custom-button .leftArrow {
+    left: -13.5%;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 50%);
+  }
+  
+  .custom-button .rightArrow {
+    -webkit-clip-path: polygon(100% 49%, 0 0, 0 100%);
+    left: 102%;
+  }
+  
+  .custom-button:hover .rightArrow {
+    background-color: #27c39f;
+    left: -15%;
+    animation: 0.6s ease-in-out both infinite alternate rightArrow8;
+  }
+  
+  .custom-button:hover .leftArrow {
+    background-color: #27c39f;
+    left: 103%;
+    animation: 0.6s ease-in-out both infinite alternate leftArrow8;
+  }
+  
+  .custom-button .corner {
+    position: absolute;
+    width: 4em;
+    height: 4em;
+    background-color: #2761c3;
+    box-shadow: inset 1px 1px 8px #2781c3;
+    transform: scale(1) rotate(45deg);
+    transition: 0.2s;
+  }
+  
+  .custom-button .rightTop {
+    top: -1.98em;
+    left: 91%;
+  }
+  
+  .custom-button .leftTop {
+    top: -1.96em;
+    left: -3.0em;
+  }
+  
+  .custom-button .leftBottom {
+    top: 2.10em;
+    left: -2.15em;
+  }
+  
+  .custom-button .rightBottom {
+    top: 45%;
+    left: 88%;
+  }
+  
+  .custom-button:hover .leftTop {
+    animation: 0.1s ease-in-out 0.05s both changeColor8,
+    0.2s linear 0.4s both lightEffect8;
+  }
+  
+  .custom-button:hover .rightTop {
+    animation: 0.1s ease-in-out 0.15s both changeColor8,
+    0.2s linear 0.4s both lightEffect8;
+  }
+  
+  .custom-button:hover .rightBottom {
+    animation: 0.1s ease-in-out 0.25s both changeColor8,
+    0.2s linear 0.4s both lightEffect8;
+  }
+  
+  .custom-button:hover .leftBottom {
+    animation: 0.1s ease-in-out 0.35s both changeColor8,
+    0.2s linear 0.4s both lightEffect8;
+  }
+  
+  .custom-button:hover .corner {
+    transform: scale(1.25) rotate(45deg);
+  }
+  
+  .custom-button:hover .clip {
+    animation: 0.2s ease-in-out 0.55s both greenLight8;
+    --color: #27c39f;
+  }
+  
+  @keyframes changeColor8 {
+    from {
+      background-color: #2781c3;
+    }
+  
+    to {
+      background-color: #27c39f;
+    }
+  }
+  
+  @keyframes lightEffect8 {
+    from {
+      box-shadow: 1px 1px 5px #27c39f;
+    }
+  
+    to {
+      box-shadow: 0 0 2px #27c39f;
+    }
+  }
+  
+  @keyframes greenLight8 {
+    from {
+    }
+  
+    to {
+      box-shadow: inset 0px 0px 32px #27c39f;
+    }
+  }
+  
+  @keyframes leftArrow8 {
+    from {
+      transform: translate(0px);
+    }
+  
+    to {
+      transform: translateX(10px);
+    }
+  }
+  
+  @keyframes rightArrow8 {
+    from {
+      transform: translate(0px);
+    }
+  
+    to {
+      transform: translateX(-10px);
+    }
+  }
+
+  
+  .live-btn-div{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-right: 90px;
+        margin-top: 60px;
+  }
+  
