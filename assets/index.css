@@ -131,7 +131,7 @@ main h4 {
     height: 55px;
     width: 180px !important;
     cursor: pointer; /* Change cursor to pointer */
-    transition: background-color 0.1s ease, transform 0.1s ease; 
+    transition: bottom 0.6s ease;
 }
 
 
@@ -165,8 +165,9 @@ main h4 {
 }
 
 .about-section p {
-    font-size: 1rem;
-    text-align: justify;
+    font-size: 1.3rem;
+    text-align: left;
+    justify-content: center;
     align-content: center;
     font-weight: normal;
 }
@@ -786,9 +787,9 @@ textarea {
 }
 
 ::-webkit-scrollbar {
-    width: 12px;
+    width: 5px;
     /* Adjust width of the scrollbar */
-    height: 12px;
+    height: 9px;
     /* Adjust height of horizontal scrollbar */
 }
 
@@ -938,7 +939,7 @@ nav .nav-content {
 .nav-content span a {
     height: 50px;
     width: 50px;
-    background: #fff;
+    background: #000103;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -949,7 +950,7 @@ nav .nav-content {
 
 .nav-content .toggle-btn {
     font-size: 35px;
-    color: red;
+    color: #007bff;
     z-index: 100;
     cursor: pointer;
     transform: rotate(-225deg);
@@ -982,7 +983,7 @@ nav.open .nav-content span {
 
 .nav-content span a i {
     font-size: 24px;
-    color: red;
+    color: #007bff;
     transform: rotate(calc(var(--i) * (360deg / -8)));
     opacity: 0.6;
     transition: 0.2s;
